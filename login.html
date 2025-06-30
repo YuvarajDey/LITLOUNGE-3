@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LITLOUNGE-3 - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>LITLOUNGE</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="charts.html">Top Charts</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="login.html">Login/Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container login-register-page">
+            <div class="form-container" id="login-form-container">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Login</button>
+                    <p class="toggle-form">Don't have an account? <a href="#" id="show-register">Register here</a></p>
+                </form>
+            </div>
+
+            <div class="form-container" id="register-form-container" style="display: none;">
+                <h2>Register</h2>
+                <form id="register-form">
+                    <div class="form-group">
+                        <label for="register-username">Username</label>
+                        <input type="text" id="register-username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Password</label>
+                        <input type="password" id="register-password" name="password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm-password">Confirm Password</label>
+                        <input type="password" id="register-confirm-password" name="confirm-password" required>
+                    </div>
+                    <button type="submit" class="btn-submit">Register</button>
+                    <p class="toggle-form">Already have an account? <a href="#" id="show-login">Login here</a></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- Welcome Tour Modal/Popup (hidden by default) -->
+        <div id="welcome-tour-modal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="tour-carousel">
+                    <div class="tour-slide active">
+                        <img src="images/tour_slide1.png" alt="Welcome to LitLounge" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="tour-placeholder-content" style="display:none; background-color: #e0e0e0; padding: 20px; text-align: center;">Welcome to LitLounge! Discover your next favorite book.</div>
+                        <h3>Welcome to LitLounge!</h3>
+                        <p>Explore a vast collection of books and authors.</p>
+                    </div>
+                    <div class="tour-slide">
+                        <img src="images/tour_slide2.png" alt="Personalize Your Experience" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="tour-placeholder-content" style="display:none; background-color: #e0e0e0; padding: 20px; text-align: center;">Personalize Your Experience! Set your preferences in the dashboard.</div>
+                        <h3>Personalize Your Experience</h3>
+                        <p>Set your favorite genres and get tailored recommendations.</p>
+                    </div>
+                    <div class="tour-slide">
+                        <img src="images/tour_slide3.png" alt="Join the Community" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="tour-placeholder-content" style="display:none; background-color: #e0e0e0; padding: 20px; text-align: center;">Join the Community! Rate books and see what others are reading.</div>
+                        <h3>Join the Community</h3>
+                        <p>Rate books, write reviews, and see what's trending!</p>
+                    </div>
+                </div>
+                <div class="tour-navigation">
+                    <button id="tour-prev" disabled>&laquo; Prev</button>
+                    <span id="tour-indicator">1 / 3</span>
+                    <button id="tour-next">Next &raquo;</button>
+                    <button id="tour-finish" style="display:none;">Finish Tour</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 LITLOUNGE-3. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

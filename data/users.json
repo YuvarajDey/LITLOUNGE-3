@@ -1,0 +1,56 @@
+[
+  {
+    "id": "user1",
+    "username": "BookFanatic",
+    "profileImage": "images/user1_avatar.png",
+    "readingLists": {
+      "favorites": ["1", "4"],
+      "wantToRead": ["2", "5"],
+      "currentlyReading": [
+        {"bookId": "3", "progress": 60}
+      ]
+    },
+    "preferences": {
+      "favoriteGenres": ["Fiction", "Self-Help"],
+      "notifications": true,
+      "darkMode": false
+    },
+    "library": {
+      "saved": ["1", "4"],
+      "rented": [],
+      "subscribed": ["1", "4"]
+    },
+    "readingStats": {
+      "booksReadThisMonth": 2,
+      "pagesReadThisWeek": 350,
+      "readingStreak": "15 days"
+    }
+  },
+  {
+    "id": "user2",
+    "username": "PageTurnerPro",
+    "profileImage": "images/user2_avatar.png",
+    "readingLists": {
+      "favorites": ["2", "5"],
+      "wantToRead": ["1", "3"],
+      "currentlyReading": [
+        {"bookId": "4", "progress": 25}
+      ]
+    },
+    "preferences": {
+      "favoriteGenres": ["Science Fiction", "Mystery"],
+      "notifications": false,
+      "darkMode": true
+    },
+    "library": {
+      "saved": ["2", "5"],
+      "rented": ["5"],
+      "subscribed": []
+    },
+    "readingStats": {
+      "booksReadThisMonth": 1,
+      "pagesReadThisWeek": 180,
+      "readingStreak": "5 days"
+    }
+  }
+]

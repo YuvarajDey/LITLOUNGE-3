@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LITLOUNGE-3 - Top Charts</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>LITLOUNGE</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="charts.html">Top Charts</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="login.html">Login/Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container charts-page">
+            <section id="readers-choice" class="chart-section">
+                <h2>Reader's Choice Awards</h2>
+                <p class="chart-description">Top books as voted by our community. Cast your vote!</p>
+                <div class="chart-list" id="readers-choice-list">
+                    <!-- Books will be populated by JS -->
+                    <p><em>Loading Reader's Choice...</em></p>
+                </div>
+            </section>
+
+            <section id="critics-picks" class="chart-section">
+                <h2>Critic's Picks</h2>
+                <p class="chart-description">Acclaimed books selected by literary experts.</p>
+                <div class="chart-list" id="critics-picks-list">
+                    <!-- Books will be populated by JS -->
+                    <p><em>Loading Critic's Picks...</em></p>
+                </div>
+            </section>
+
+            <section id="timeless-classics" class="chart-section">
+                <h2>Timeless Classics</h2>
+                <p class="chart-description">Must-read legendary books that have stood the test of time.</p>
+                <div class="chart-list" id="timeless-classics-list">
+                    <!-- Books will be populated by JS -->
+                    <p><em>Loading Timeless Classics...</em></p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 LITLOUNGE-3. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
