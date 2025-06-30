@@ -1,0 +1,97 @@
+[
+  {
+    "id": "1",
+    "title": "The Midnight Library",
+    "author": "Matt Haig",
+    "coverImage": "images/midnight_library.jpg",
+    "rating": 4.5,
+    "accessBadge": "Subscribe",
+    "genre": "Fiction",
+    "description": "Between life and death there is a library, and within that library, the shelves go on forever. Every book provides a chance to try another life you could have lived.",
+    "reviews": [
+      {"user": "Reader123", "comment": "Absolutely loved it!", "rating": 5},
+      {"user": "Bookworm_Belle", "comment": "Thought-provoking and unique.", "rating": 4}
+    ],
+    "featured": true,
+    "trending": true,
+    "editorsChoice": false,
+    "hotOffPress": true,
+    "sample": "Nora Seed found herself in the Midnight Library, a place between life and death..."
+  },
+  {
+    "id": "2",
+    "title": "Project Hail Mary",
+    "author": "Andy Weir",
+    "coverImage": "images/project_hail_mary.jpg",
+    "rating": 4.8,
+    "accessBadge": "Rent",
+    "genre": "Science Fiction",
+    "description": "Ryland Grace is the sole survivor on a desperate, last-chance mission—and if he fails, humanity and the earth itself will perish.",
+    "reviews": [
+      {"user": "SciFiFan", "comment": "Best sci-fi I've read in years!", "rating": 5},
+      {"user": "AstroReader", "comment": "Couldn't put it down.", "rating": 5}
+    ],
+    "featured": true,
+    "trending": true,
+    "editorsChoice": true,
+    "hotOffPress": false,
+    "sample": "The first thing Ryland Grace remembered was the smell of his own breath..."
+  },
+  {
+    "id": "3",
+    "title": "The Vanishing Half",
+    "author": "Brit Bennett",
+    "coverImage": "images/vanishing_half.jpg",
+    "rating": 4.3,
+    "accessBadge": "Free",
+    "genre": "Historical Fiction",
+    "description": "The Vignes twin sisters will choose to live in two very different worlds, one black and one white.",
+    "reviews": [
+      {"user": "HistoryBuff", "comment": "A powerful and moving story.", "rating": 4.5},
+      {"user": "LitLover", "comment": "Beautifully written.", "rating": 4}
+    ],
+    "featured": false,
+    "trending": false,
+    "editorsChoice": true,
+    "hotOffPress": true,
+    "sample": "The Vignes twins were identical, from their honey-colored skin to their dark, searching eyes..."
+  },
+  {
+    "id": "4",
+    "title": "Atomic Habits",
+    "author": "James Clear",
+    "coverImage": "images/atomic_habits.jpg",
+    "rating": 4.9,
+    "accessBadge": "Subscribe",
+    "genre": "Self-Help",
+    "description": "An easy & proven way to build good habits & break bad ones.",
+    "reviews": [
+      {"user": "ProductivityPro", "comment": "Life-changing book!", "rating": 5},
+      {"user": "GoalGetter", "comment": "Practical and actionable advice.", "rating": 5}
+    ],
+    "featured": false,
+    "trending": true,
+    "editorsChoice": false,
+    "hotOffPress": false,
+    "sample": "An atomic habit is a little habit that is part of a larger system..."
+  },
+  {
+    "id": "5",
+    "title": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "coverImage": "images/crawdads_sing.jpg",
+    "rating": 4.7,
+    "accessBadge": "Rent",
+    "genre": "Mystery",
+    "description": "A wild child, a murder mystery, and a celebration of nature.",
+    "reviews": [
+      {"user": "NatureLover", "comment": "Captivating story and beautiful prose.", "rating": 5},
+      {"user": "MysteryMaven", "comment": "Kept me guessing until the end.", "rating": 4.5}
+    ],
+    "featured": true,
+    "trending": false,
+    "editorsChoice": false,
+    "hotOffPress": true,
+    "sample": "Marsh is not swamp. Marsh is a space of light, where grass grows in water, and water flows into the sky..."
+  }
+]

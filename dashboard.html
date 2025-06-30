@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LITLOUNGE-3 - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>LITLOUNGE</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="charts.html">Top Charts</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="login.html">Login/Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container dashboard-page">
+            <aside class="dashboard-sidebar">
+                <div class="user-profile-summary">
+                    <img src="images/user_avatar_placeholder.png" alt="User Avatar" id="user-avatar-sidebar" class="avatar-sidebar" onerror="this.src='images/user_avatar_placeholder.png'">
+                    <h3 id="username-sidebar">Username</h3>
+                    <p><a href="#edit-profile">Edit Profile</a></p> <!-- Placeholder link -->
+                </div>
+                <nav class="dashboard-nav">
+                    <ul>
+                        <li><a href="#continue-reading-section" class="active-nav">Continue Reading</a></li>
+                        <li><a href="#my-library-section">My Library</a></li>
+                        <li><a href="#reading-lists-section">Reading Lists</a></li>
+                        <li><a href="#reading-preferences-section">Preferences</a></li>
+                        <li><a href="#reading-stats-section">Reading Stats</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <section class="dashboard-content">
+                <div id="dashboard-welcome" class="dashboard-main-section">
+                     <h2>Welcome to your Dashboard, <span id="username-welcome">User</span>!</h2>
+                     <p>Select an option from the sidebar to view your content.</p>
+                </div>
+
+                <div id="continue-reading-section" class="dashboard-main-section active-section">
+                    <h2>Continue Reading</h2>
+                    <div id="continue-reading-list" class="book-grid">
+                        <!-- Books with progress bars will be populated by JS -->
+                        <p><em>Loading your current reads...</em></p>
+                    </div>
+                </div>
+
+                <div id="my-library-section" class="dashboard-main-section">
+                    <h2>My Library</h2>
+                    <div class="tabs">
+                        <button class="tab-link active" data-tab="library-saved">Saved</button>
+                        <button class="tab-link" data-tab="library-rented">Rented</button>
+                        <button class="tab-link" data-tab="library-subscribed">Subscribed</button>
+                    </div>
+                    <div id="library-saved" class="tab-content active book-grid">
+                        <p><em>Loading saved books...</em></p>
+                    </div>
+                    <div id="library-rented" class="tab-content book-grid">
+                        <p><em>Loading rented books...</em></p>
+                    </div>
+                     <div id="library-subscribed" class="tab-content book-grid">
+                        <p><em>Loading subscribed books...</em></p>
+                    </div>
+                </div>
+
+                <div id="reading-lists-section" class="dashboard-main-section">
+                    <h2>My Reading Lists</h2>
+                     <div class="tabs">
+                        <button class="tab-link active" data-tab="list-favorites">Favorites</button>
+                        <button class="tab-link" data-tab="list-want-to-read">Want to Read</button>
+                    </div>
+                    <div id="list-favorites" class="tab-content active book-grid">
+                        <p><em>Loading favorite books...</em></p>
+                    </div>
+                    <div id="list-want-to-read" class="tab-content book-grid">
+                        <p><em>Loading 'Want to Read' list...</em></p>
+                    </div>
+                </div>
+
+                <div id="reading-preferences-section" class="dashboard-main-section">
+                    <h2>Reading Preferences</h2>
+                    <form id="preferences-form">
+                        <div class="form-group">
+                            <label for="fav-genres">Favorite Genres (comma-separated):</label>
+                            <input type="text" id="fav-genres" name="fav-genres" value="Fiction, Mystery">
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" id="notifications-pref" name="notifications-pref" checked>
+                                Enable Email Notifications
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" id="dark-mode-pref" name="dark-mode-pref">
+                                Enable Dark Mode (UI Only)
+                            </label>
+                        </div>
+                        <button type="submit" class="save-prefs-button">Save Preferences</button>
+                    </form>
+                </div>
+
+                <div id="reading-stats-section" class="dashboard-main-section">
+                    <h2>My Reading Stats</h2>
+                    <div class="stats-container">
+                        <div class="stat-card">
+                            <h4>Books Read (This Month)</h4>
+                            <p id="stat-books-month">0</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Pages Read (This Week)</h4>
+                            <p id="stat-pages-week">0</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4>Current Reading Streak</h4>
+                            <p id="stat-reading-streak">0 days</p>
+                        </div>
+                    </div>
+                    <div class="mock-chart-container">
+                        <h4>Activity Overview (Mock Chart)</h4>
+                        <img src="images/mock_chart.png" alt="Mock activity chart" onerror="this.src='images/placeholder_cover.png'; this.alt='Placeholder chart';">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 LITLOUNGE-3. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

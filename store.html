@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LITLOUNGE-3 - Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>LITLOUNGE</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="charts.html">Top Charts</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="login.html">Login/Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container store-page">
+            <aside class="sidebar">
+                <h2>Filters</h2>
+                <div class="filter-group">
+                    <h3>Genre</h3>
+                    <ul id="genre-filter-list">
+                        <!-- Genres will be populated by JS -->
+                        <li><label><input type="checkbox" name="genre" value="fiction"> Fiction</label></li>
+                        <li><label><input type="checkbox" name="genre" value="science-fiction"> Science Fiction</label></li>
+                        <li><label><input type="checkbox" name="genre" value="mystery"> Mystery</label></li>
+                        <li><label><input type="checkbox" name="genre" value="self-help"> Self-Help</label></li>
+                        <!-- Add more static or dynamic genres -->
+                    </ul>
+                </div>
+                <div class="filter-group">
+                    <h3>Rating</h3>
+                    <select id="rating-filter">
+                        <option value="">Any Rating</option>
+                        <option value="4.5">4.5 Stars & Up</option>
+                        <option value="4">4 Stars & Up</option>
+                        <option value="3">3 Stars & Up</option>
+                    </select>
+                </div>
+                <button id="apply-filters-btn">Apply Filters</button>
+            </aside>
+            <section class="store-content">
+                <div class="store-controls">
+                    <input type="search" id="search-bar" placeholder="Search for books, authors, genres...">
+                    <select id="sort-dropdown">
+                        <option value="newest">Newest</option>
+                        <option value="popular">Popular (Rating)</option>
+                        <option value="title-asc">Title A-Z</option>
+                        <option value="title-desc">Title Z-A</option>
+                    </select>
+                </div>
+                <div class="book-grid" id="store-book-grid">
+                    <!-- Book cards will be dynamically inserted here by JavaScript -->
+                    <p><em>Loading books...</em></p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 LITLOUNGE-3. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
