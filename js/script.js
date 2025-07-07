@@ -5198,7 +5198,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
     async function loadHomepageContent() {
         try {
-            const books = await fetchAllBooks(); // Use global fetchAllBooks
+            // Fetch a diverse set of books for the homepage sections
+            const allFetchedBooks = await fetchAllBooks("subject:fiction OR subject:science_fiction OR subject:mystery OR subject:history", 50);
+
+            if (allFetchedBooks.length === 0) {
+                console.warn("No books fetched for homepage, sections might be empty.");
+                // Optionally display a general error message on the page here
+                return;
+            }
 
             const featuredCarouselEl = document.querySelector('#hero .carousel');
             const trendingGrid = document.getElementById('trending-grid');
